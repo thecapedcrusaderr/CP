@@ -1,0 +1,13 @@
+                      
+fun decrementby1([],0)=[]
+|   decrementby1(l1 as x1::y1,0)= l1
+|   decrementby1(l3 as x3::y3, p) = if (x3 > 0) then (x3-1::y3)
+                                    else (9999 :: decrementby1(y3,1));
+
+fun fact([0]) = [1]
+|   fact(l2 as x1::y1) = karatsuba(l2,fact((decrementby1(l2,1))));
+
+
+fun factorial x = let val a = fromString(x)
+	          in toString(trim(fact a))
+                  end;
