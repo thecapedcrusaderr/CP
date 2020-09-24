@@ -4,9 +4,6 @@
 
 class Solution {
 public:
-
-
-
     void graphColoring(vector<vector<int>> &graph, vector<int> &color,vector<bool> &visited, int ch, int col )
     {
         visited[ch] = true;
