@@ -1,0 +1,4 @@
+1. How to find articulation point.
+2. Lazy propagation in segment tree.
+3. Strongly connected component in directed graph
+4. Find prime factors of a number in O(logn)
